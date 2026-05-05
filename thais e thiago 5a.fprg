@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="thais e thiago 5a"/>
+        <attribute name="authors" value="thais.oneves"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-05 07:42:11 "/>
+        <attribute name="created" value="dGhhaXMub25ldmVzO1NBTjA3MTc0NTZXMTEtMTsyMDI2LTA1LTA1OyIwNzoyMzoyNCAiOzMzMDM="/>
+        <attribute name="edited" value="dGhhaXMub25ldmVzO1NBTjA3MTc0NTZXMTEtMTsyMDI2LTA1LTA1OyIwNzo0MjoxMSAiOzE7MzQwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor" type="Integer" array="False" size=""/>
+            <declare name="resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual valor da sua compra final?&quot;" newline="True"/>
+            <input variable="valor"/>
+            <if expression="valor&gt;=100">
+                <then>
+                    <assign variable="resultado" expression="valor/10"/>
+                    <output expression="&quot;Voc&#234; ganhou 10% de desconto na compra, seu descontou ficou:&quot; &amp; resultado" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; n&#227;o consegue desconto com esse valor&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
